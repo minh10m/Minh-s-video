@@ -1,0 +1,135 @@
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: #ffffff;
+    height: 60px;
+    padding-bottom: 10px;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #e0e0e0;
+}
+.left-section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 200px;
+    justify-content: space-around;
+}
+.icon-hamburger{
+    height: 30px;
+    margin-right: 12px;
+    margin-left: 10px;
+}
+.icon-youtube{
+    height: 24px;
+}
+.middle-section{
+    width: 600px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.search-bar{
+    flex: 1;
+    height: 34px;
+    border: 1px solid #AAAAAA;
+    border-radius: 17px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    
+}
+
+.search-bar::placeholder{
+    font-family: 'Roboto',Arial ,sans-serif;
+    font-size: 14px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+}
+.icon-search{
+    background-color: #f0efef;
+    height: 28px;
+    border: 1px solid #AAAAAA;
+    padding: 4px;
+    padding-right: 18px;
+    padding-left: 10px;
+    margin-left: -1px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.voice-search{
+    height: 30px;
+    background-color: #f0f0f0;
+    border-radius: 100%;
+    padding: 4px;
+    margin-left: 12px;
+}
+.right-section{
+    width: 290px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    flex-shrink: 0;
+}
+.icon-upload{
+    height: 32px;
+}
+.icon-app{
+    height: 32px;
+}
+.icon-notification{
+    height: 32px;
+}
+.icon-mychannel{
+    height: 36px;
+    border-radius:100%;
+}
+.icon-row{
+    position: relative;
+    height: 32px;
+}
+.notifications-number{
+    position: absolute;
+    top: 0px;
+    right: -3px;
+    background-color: rgb(247, 55, 55);
+    color: white;
+    font-size: 11px;
+    padding: 3px 5px;
+    border-radius: 100%;
+}
+.search-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border: transparent;
+    border-color: none;
+    background-color: white;
+    padding: 0;
+    cursor: pointer;
+  
+}
+.tooltip{
+    position: absolute;
+    bottom: -22px;
+    text-wrap: nowrap;
+    font-size: 12px;
+    background-color: rgb(66, 66, 66);
+    color: white;
+    padding: 2px 2px ;
+    opacity : 0;
+    transition: opacity 0.2s;
+    pointer-events: none;
+}
+.search-button:hover .tooltip{
+    opacity: 1;
+}

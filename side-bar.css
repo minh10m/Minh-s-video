@@ -1,0 +1,31 @@
+.side-bar{
+    background-color: rgb(255, 255, 255);
+    width: 150px;
+    position: fixed;
+    top: 70px;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border-right-width: 1px;
+    border-right-style: solid;
+    border-right-color: #e0e0e0;
+    z-index: 2000;
+}
+.side-bar img{
+    height: 35px;
+    padding: 15px;
+    padding-top: 10px;
+}
+.side-bar div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.side-bar div p{
+    color: black;
+    font-size: 12px;
+    margin-top: -8px;
+}
